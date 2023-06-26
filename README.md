@@ -16,22 +16,16 @@ Then build all images on docker host. in the repo you will get all dockerfile in
 - recommendationservice
 - shippingservice
 
-# Build all images 
+# Build all images </br>
+docker build -t front:v1 . </br>
+docker build -t advise:v1 . </br>
+docker build -t cart:v1 . </br>
+docker build -t checkout:v1 . </br>
+docker build -t curr:v1 . </br>
+docker build -t email:v1 . </br>
 docker build -t load:v1 . </br>
-docker build -t front:v1 .
-docker build -t catalog:v1 .
-docker build -t frontend:v1 .
-docker build -t frontend:v1 .
-docker build -t product:v1 .
-docker build -t advise:v1 .
-docker build -t cart:v1 .
-docker build -t checkout:v1 .
-docker build -t curr:v1 .
-docker build -t email:v1 .
-docker build -t load:v1 .
-docker build -t payment:v1 .
-docker build -t productcata:v1 .
-docker build -t recommand:v1
+docker build -t payment:v1 . </br>
+docker build -t productcata:v1 . </br>
 docker build -t recommand:v1 .
 docker build -t shipp:v1 .
 
@@ -69,5 +63,5 @@ docker run -itd --network demo --env-file env --name emailservice -p 5000:8080 e
 docker run -itd --network demo --env-file env --name paymentservice -p 50051 payment:v1
 docker run -itd --name frontend -p 80:8080 --network demo --env-file env frontend:v1
 docker run -itd --network demo --env-file env --name recommendationservice -p 8080:8080 recommand:v1
-docker run -itd --network demo --env-file env --name paymentservice  payment:v
 docker run -itd --network demo --env-file env --name shippingservice shipp:v1
+
