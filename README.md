@@ -16,6 +16,7 @@ Then build all images on docker host. in the repo you will get all dockerfile in
 - recommendationservice
 - shippingservice
 
+
 Now Create environment file in you project direcoty for up all the servcie and dependency. Also all container releted on the project will run on a different network in docker. In my case I run on demo network. 
 create an env file for running all container service with the following content in the file:
 
@@ -38,6 +39,10 @@ SHIPPING_SERVICE_ADDR=shippingservice:50051
 CHECKOUT_SERVICE_ADDR=checkoutservice:5050
 
 AD_SERVICE_ADDR=adservice:9555
+
+#Now run images with the enviornmet file.
+
+
 
 
 
