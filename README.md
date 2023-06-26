@@ -1,5 +1,5 @@
 # microservice-demo-docker
-#Google Microservice Demo run on docker or docker compose
+# Google Microservice Demo run on docker or docker compose
 First download the repository from git 
 git clone https://github.com/arifislam007/microservices-demo.git
 
@@ -40,7 +40,7 @@ CHECKOUT_SERVICE_ADDR=checkoutservice:5050
 
 AD_SERVICE_ADDR=adservice:9555
 
-#Now run images with the enviornmet file.
+# Now run images with the enviornmet file.
 
 
 
