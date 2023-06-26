@@ -16,7 +16,7 @@ Then build all images on your docker host. in the repo you will get all dockerfi
 - recommendationservice
 - shippingservice
 
-Now Create some environment file in you project direcoty for up all the servcie and dependency. Also all container releted on the project will run on different network in docker. in my case i run on demo network. 
+Now Create environment file in you project direcoty for up all the servcie and dependency. Also all container releted on the project will run on a different network in docker. In my case I run on demo network. 
 create an env file for frontend service with the following content in the file:
 
 PRODUCT_CATALOG_SERVICE_ADDR=productcatalogservice:3550
@@ -39,7 +39,6 @@ CHECKOUT_SERVICE_ADDR=checkoutservice:5050
 
 AD_SERVICE_ADDR=adservice:9555
 
-If you understand thease all are you container name to communicate with each other. so set you veriable as per your lab environment.
 
 
 
