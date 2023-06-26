@@ -39,4 +39,7 @@ CHECKOUT_SERVICE_ADDR=checkoutservice:5050
 
 AD_SERVICE_ADDR=adservice:9555
 
+If you understand thease all are you container name to communicate with each other. so set you veriable as per your lab environment.
+
+
 
