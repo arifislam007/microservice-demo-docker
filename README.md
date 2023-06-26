@@ -56,3 +56,21 @@ docker run -itd --name frontend -p 80:8080 --network demo --env-file env fronten
 docker run -itd --network demo --env-file env --name recommendationservice -p 8080:8080 recommand:v1 </br>
 docker run -itd --network demo --env-file env --name shippingservice shipp:v1 </br>
 
+
+# Issue on running on docker 
+currencyservice container won't running due to some issue on nodejs server.js file. </br>
+just change server.js file located on src/currencyservice/server.js some line. </br>
+line 64: const PORT = process.env.PORT; </br> 
+set static port like following: </br>
+const PORT = 7000; </br> 
+
+Chnage following on the same file: </br>
+
+server.bindAsync( </br>
+    `[::]:${PORT}`, </br>
+    grpc.ServerCredentials.createInsecure(), </br>
+change as following:</br>
+server.bindAsync( </br>
+    `0.0.0.0:${PORT}`, </br>
+    grpc.ServerCredentials.createInsecure(), </br>
+
