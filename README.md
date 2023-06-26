@@ -17,7 +17,7 @@ Then build all images on docker host. in the repo you will get all dockerfile in
 - shippingservice
 
 Now Create environment file in you project direcoty for up all the servcie and dependency. Also all container releted on the project will run on a different network in docker. In my case I run on demo network. 
-create an env file for frontend service with the following content in the file:
+create an env file for running all container service with the following content in the file:
 
 PRODUCT_CATALOG_SERVICE_ADDR=productcatalogservice:3550
 
