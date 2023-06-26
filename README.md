@@ -74,3 +74,6 @@ server.bindAsync( </br>
     `0.0.0.0:${PORT}`, </br>
     grpc.ServerCredentials.createInsecure(), </br>
 
+    # Or 
+    Dowload server.js file from this repository and execute 
+
