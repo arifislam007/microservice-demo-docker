@@ -32,7 +32,7 @@ docker build -t shipp:v1 .
 
 Now Create environment file in you project direcoty for up all the servcie and dependency. Also all container releted on the project will run on a different network in docker. In my case I run on demo network. 
 create an env file for running all container service with the following content in the file:
-
+# Create environment file in workding directory from where all docker run command will execute
 PRODUCT_CATALOG_SERVICE_ADDR=productcatalogservice:3550 </br>
 CURRENCY_SERVICE_ADDR=currencyservice:7000 </br>
 SHIPPING_SERVICE_ADDR=shippingservice:50051 </br>
