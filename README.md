@@ -17,7 +17,7 @@ Then build all images on docker host. in the repo you will get all dockerfile in
 - shippingservice
 
 # Build all images 
-docker build -t load:v1 .
+docker build -t load:v1 . </br>
 docker build -t front:v1 .
 docker build -t catalog:v1 .
 docker build -t frontend:v1 .
