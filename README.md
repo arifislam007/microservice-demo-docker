@@ -55,7 +55,7 @@ docker run -itd --network demo --env-file env --name paymentservice -p 50051 pay
 docker run -itd --name frontend -p 80:8080 --network demo --env-file env frontend:v1 </br>
 docker run -itd --network demo --env-file env --name recommendationservice -p 8080:8080 recommand:v1 </br>
 docker run -itd --network demo --env-file env --name shippingservice shipp:v1 </br>
-
+docker run -itd --network demo --env-file env --name productcatalogservice cata:v1 </br>
 
 # Issue on running on docker 
 currencyservice container won't running due to some issue on nodejs server.js file. </br>
